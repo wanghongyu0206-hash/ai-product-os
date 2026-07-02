@@ -1,14 +1,33 @@
-# AI Product OS
+# Skills Index
 
-When solving tasks:
+## Design
 
-1. Read skills/index.md
+- Apple UI
+- Material UI
+- Dashboard UI
+- Mobile UI
 
-2. Find the most relevant Skill
+---
 
-3. Load that Skill's SKILL.md
+## Product
 
-4. Follow it strictly
+- PRD
+- User Story
+- Requirement Review
+- Roadmap
 
-5. If multiple Skills are relevant,
-combine them.
+---
+
+## Frontend
+
+- React
+- Next.js
+- Tailwind CSS
+
+---
+
+## AI
+
+- Prompt Engineering
+- RAG
+- AI Agent

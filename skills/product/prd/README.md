@@ -1,31 +1,18 @@
 # PRD Skill
 
-## Overview
+Generate professional Product Requirement Documents.
 
-This skill helps AI generate structured and professional Product Requirement Documents (PRDs).
+## Features
 
-## When to Use
+- Markdown Output
+- Standard Structure
+- AI Product Manager Style
+- Chinese Default
 
-Use this skill for:
+## Usage
 
-- New product planning
-- Feature design
-- Requirement analysis
-- AI product design
-- SaaS planning
+Use this skill whenever creating:
 
-## Output
-
-The AI will generate:
-
-- Product background
-- User analysis
-- User stories
-- Functional requirements
-- Metrics
-- Event tracking
-- Acceptance criteria
-
-## Version
-
-v1.0
+- PRD
+- Requirement Analysis
+- Product Design

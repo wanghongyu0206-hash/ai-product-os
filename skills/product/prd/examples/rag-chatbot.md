@@ -1,13 +1,13 @@
-# Prompt
+# AI 客服系统 PRD
 
-Design a complete PRD for an AI customer service chatbot using RAG.
+## 产品目标
 
-Requirements:
+搭建一个企业 AI 客服平台。
 
-- Web application
-- Admin dashboard
-- Chat interface
-- Knowledge Base
-- Conversation history
-- Permission management
-- Analytics
+支持：
+
+- AI 回复
+- 人工接管
+- 知识库
+- 会话管理
+- 用户管理
