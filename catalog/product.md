@@ -1,27 +1,35 @@
-# Product Skills
+# Product Skill Catalog
 
-## PRD
-
-Status
-
-✅ Stable
-
-Description
-
-Generate Product Requirement Documents.
-
-Location
-
-skills/product/prd
+Available Product Skills
 
 ---
 
-## User Story
+## Product Documents
 
-🚧 Planning
+- PRD
+- MRD
+- BRD
 
 ---
 
-## Roadmap
+## Requirement Analysis
 
-🚧 Planning
+- User Story
+- User Journey
+- Information Architecture
+
+---
+
+## Strategy
+
+- Roadmap
+- MVP
+- Feature Prioritization
+
+---
+
+## Research
+
+- Competitor Analysis
+- SWOT
+- Market Analysis

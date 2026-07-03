@@ -1,0 +1,15 @@
+name: Product Manager Agent
+
+default_workflow: product-design
+
+skills:
+
+  - product/prd
+
+  - design/apple-ui
+
+available_workflows:
+
+  - product-design
+
+  - ui-design

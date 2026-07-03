@@ -1,0 +1,21 @@
+name: UI Design Workflow
+
+version: 1.0
+
+description: Generate high-fidelity UI.
+
+steps:
+
+  - Read Apple UI Skill
+
+  - Read Components
+
+  - Read Colors
+
+  - Read Typography
+
+  - Generate Layout
+
+  - Generate Components
+
+  - Generate High Fidelity UI

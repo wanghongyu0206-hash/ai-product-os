@@ -1,0 +1,36 @@
+name: Product Design Workflow
+
+version: 1.0
+
+description: >
+  End-to-end workflow for designing AI products.
+
+trigger:
+
+  - User requests a new product
+  - User requests a new feature
+  - User requests UI redesign
+
+steps:
+
+  - id: requirement
+    skill: product/prd
+    action: Analyze Requirements
+
+  - id: prd
+    skill: product/prd
+    action: Generate PRD
+
+  - id: ia
+    action: Generate Information Architecture
+
+  - id: flow
+    action: Generate User Flow
+
+  - id: ui
+    skill: design/apple-ui
+    action: Generate Apple-style UI
+
+  - id: figma
+    tool: figma-mcp
+    action: Export to Figma
