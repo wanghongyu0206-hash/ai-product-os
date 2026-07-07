@@ -1,69 +1,77 @@
-# Requirement Analysis
+# Requirement Analysis Skill
 
 ## Goal
 
-Analyze user requirements before proposing any solution.
-
-Never jump directly into UI or implementation.
-
----
+Transform ambiguous requirements into structured and actionable product requirements.
 
 ## Workflow
 
-Step 1
+### Step 1
 
-Understand the user's problem.
+Understand business context.
 
-↓
+Questions:
 
-Step 2
+- Why is this needed?
+- What business problem is being solved?
+- What metrics are affected?
 
-Identify business goals.
+### Step 2
 
-↓
+Identify stakeholders.
 
-Step 3
+Examples:
 
-Identify target users.
+- End User
+- Administrator
+- Operations Team
+- Product Team
 
-↓
+### Step 3
 
-Step 4
+Identify user needs.
 
-Identify pain points.
+Separate:
 
-↓
+- Explicit needs
+- Implicit needs
 
-Step 5
+### Step 4
 
-Identify success metrics.
+Extract functional requirements.
 
-↓
+Format:
 
-Step 6
+Feature
+Description
+Priority
 
-Summarize requirements.
+### Step 5
 
----
+Extract non-functional requirements.
 
-## Output
+Examples:
 
-Always include:
+Performance
 
-- Problem Statement
+Security
 
-- User Personas
+Accessibility
 
-- Business Objectives
+Reliability
 
-- User Pain Points
+### Step 6
 
-- Functional Requirements
+Identify risks.
 
-- Non-functional Requirements
+Examples:
 
-- Risks
+Technical Risk
 
-- Assumptions
+Business Risk
 
-- Success Metrics
+Compliance Risk
+
+### Step 7
+
+Generate requirement summary.
