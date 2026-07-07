@@ -1,23 +1,80 @@
-# Design System
+# Design System Skill
 
-Always maintain consistency.
+## Goal
 
-Use:
+Create a consistent visual language that can be reused across all pages.
 
-8pt Grid
+## Workflow
 
-Design Tokens
+### Step 1
 
-Reusable Components
+Define design principles.
 
-Variants
+Examples:
 
-States
+- Simplicity
+- Consistency
+- Clarity
+- Accessibility
 
-Auto Layout
+### Step 2
 
-Variables
+Standardize layout.
 
-Responsive Rules
+Include:
 
-Naming Convention
+- Grid
+- Page Width
+- Content Width
+- Section Spacing
+
+### Step 3
+
+Standardize typography.
+
+Include:
+
+- Heading Levels
+- Body Text
+- Caption
+- Font Weight
+
+### Step 4
+
+Standardize components.
+
+Examples:
+
+Button
+
+Input
+
+Table
+
+Card
+
+Dialog
+
+Tag
+
+Badge
+
+### Step 5
+
+Standardize feedback.
+
+States:
+
+Success
+
+Warning
+
+Error
+
+Loading
+
+Empty
+
+### Step 6
+
+Generate design system specification.
