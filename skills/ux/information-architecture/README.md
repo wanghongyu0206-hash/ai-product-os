@@ -2,25 +2,25 @@
 
 ## Purpose
 
-Transform product requirements into a structured information architecture.
+Transform product requirements into a clear and scalable information architecture.
 
 ## Input
 
 - PRD
-- User Story
+- User Stories
 - Functional Requirements
 
 ## Output
 
 - Sitemap
-- Navigation
-- Page List
-- Module Hierarchy
+- Navigation Structure
+- Page Hierarchy
+- Module Structure
 
 ## Applicable Products
 
 - SaaS
+- AI Products
 - CRM
 - CMS
-- AI Products
-- Enterprise Dashboard
+- Enterprise Systems

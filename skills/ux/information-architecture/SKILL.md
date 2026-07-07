@@ -2,36 +2,59 @@
 
 ## Goal
 
-Generate a scalable and consistent information architecture.
+Design a logical and scalable information architecture based on product requirements.
 
 ## Workflow
 
-Step 1
+### Step 1
 
-Read PRD.
+Read the PRD and identify all functional modules.
 
-Step 2
+### Step 2
 
-Extract all business modules.
+Group related features into logical modules.
 
-Step 3
+Examples:
 
-Group similar functions.
+- User Management
+- Analytics
+- Knowledge Base
+- Settings
 
-Step 4
+### Step 3
 
 Design navigation hierarchy.
 
-Step 5
+Rules:
 
-Generate sitemap.
+- Maximum navigation depth: 3 levels.
+- Frequently used modules should appear first.
+- Group similar functions together.
 
-Step 6
+### Step 4
 
 Generate page list.
 
-Step 7
+Each page should have one clear responsibility.
 
-Review complexity.
+### Step 5
 
-Output IA.
+Generate sitemap.
+
+Include:
+
+- Primary Navigation
+- Secondary Navigation
+- Detail Pages
+
+### Step 6
+
+Review information architecture.
+
+Check:
+
+- Completeness
+- Scalability
+- Naming Consistency
+
+Output final IA.
