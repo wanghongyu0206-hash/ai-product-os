@@ -1,0 +1,248 @@
+# AI Product OS Skill Registry
+# Catalogs all available skills organized by category
+
+categories:
+  product:
+    name: Product Skills
+    description: Product management and planning capabilities
+    path: skills/product/
+    skills:
+      prd:
+        path: skills/product/prd/
+        description: Product Requirement Document generation
+        agents:
+          - product-manager
+      user-story:
+        path: skills/product/user-story/
+        description: User story and acceptance criteria writing
+        agents:
+          - product-manager
+      requirement-analysis:
+        path: skills/product/requirement-analysis/
+        description: Requirements analysis and specification
+        agents:
+          - product-manager
+      mvp:
+        path: skills/product/mvp/
+        description: Minimum Viable Product definition
+        agents:
+          - product-manager
+      roadmap:
+        path: skills/product/roadmap/
+        description: Product roadmap planning
+        agents:
+          - product-manager
+      business-model:
+        path: skills/product/business-model/
+        description: Business model canvas design
+        agents:
+          - product-manager
+      competitive-analysis:
+        path: skills/product/competitive-analysis/
+        description: Competitive analysis and positioning
+        agents:
+          - product-manager
+      feature-priority:
+        path: skills/product/feature-priority/
+        description: Feature prioritization frameworks
+        agents:
+          - product-manager
+
+  ux:
+    name: UX Skills
+    description: User experience design capabilities
+    path: skills/ux/
+    skills:
+      information-architecture:
+        path: skills/ux/information-architecture/
+        description: Information architecture and site mapping
+        agents:
+          - ux-designer
+      user-flow:
+        path: skills/ux/user-flow/
+        description: User journey and task flow design
+        agents:
+          - ux-designer
+      wireframe:
+        path: skills/ux/wireframe/
+        description: Low-fidelity wireframe creation
+        agents:
+          - ux-designer
+      interaction:
+        path: skills/ux/interaction/
+        description: Interaction design and micro-interactions
+        agents:
+          - ux-designer
+      navigation:
+        path: skills/ux/navigation/
+        description: Navigation system design
+        agents:
+          - ux-designer
+      accessibility:
+        path: skills/ux/accessibility/
+        description: Accessibility compliance (WCAG)
+        agents:
+          - ux-designer
+      dashboard-layout:
+        path: skills/ux/dashboard-layout/
+        description: Dashboard layout patterns
+        agents:
+          - ux-designer
+      design-review:
+        path: skills/ux/design-review/
+        description: Design quality review
+        agents:
+          - ux-designer
+          - qa
+
+  ui:
+    name: UI Skills
+    description: Visual interface design capabilities
+    path: skills/ui/
+    skills:
+      design-system:
+        path: skills/ui/design-system/
+        description: Design system creation and management
+        agents:
+          - ui-designer
+      component-library:
+        path: skills/ui/component-library/
+        description: Component library design
+        agents:
+          - ui-designer
+      dashboard:
+        path: skills/ui/dashboard/
+        description: Dashboard UI design
+        agents:
+          - ui-designer
+      card:
+        path: skills/ui/card/
+        description: Card component design
+        agents:
+          - ui-designer
+      form:
+        path: skills/ui/form/
+        description: Form and input design
+        agents:
+          - ui-designer
+      chart:
+        path: skills/ui/chart/
+        description: Data visualization design
+        agents:
+          - ui-designer
+      style-selector:
+        path: skills/ui/style-selector/
+        description: Visual style selection and branding
+        agents:
+          - ui-designer
+      table:
+        path: skills/ui/table/
+        description: Data table design
+        agents:
+          - ui-designer
+      detail-page:
+        path: skills/ui/detail-page/
+        description: Detail page layout design
+        agents:
+          - ui-designer
+      empty-state:
+        path: skills/ui/empty-state/
+        description: Empty state design
+        agents:
+          - ui-designer
+      filter:
+        path: skills/ui/filter/
+        description: Filter and search UI design
+        agents:
+          - ui-designer
+      search:
+        path: skills/ui/search/
+        description: Search interface design
+        agents:
+          - ui-designer
+      settings:
+        path: skills/ui/settings/
+        description: Settings page design
+        agents:
+          - ui-designer
+
+  frontend:
+    name: Frontend Skills
+    description: Frontend engineering capabilities
+    path: skills/frontend/
+    skills:
+      react-component:
+        path: skills/frontend/react-component/
+        description: React component architecture
+        agents:
+          - frontend
+      nextjs-app-router:
+        path: skills/frontend/nextjs-app-router/
+        description: Next.js App Router patterns
+        agents:
+          - frontend
+      tailwind-system:
+        path: skills/frontend/tailwind-system/
+        description: Tailwind CSS design system
+        agents:
+          - frontend
+      shadcn-component:
+        path: skills/frontend/shadcn-component/
+        description: shadcn/ui component implementation
+        agents:
+          - frontend
+      frontend-architecture:
+        path: skills/frontend/frontend-architecture/
+        description: Frontend project architecture
+        agents:
+          - frontend
+      frontend-performance:
+        path: skills/frontend/frontend-performance/
+        description: Frontend performance optimization
+        agents:
+          - frontend
+      frontend-review:
+        path: skills/frontend/frontend-review/
+        description: Frontend code quality review
+        agents:
+          - frontend
+          - qa
+
+  backend:
+    name: Backend Skills
+    description: Backend engineering capabilities
+    path: skills/backend/
+    skills:
+      api-design:
+        path: skills/backend/api-design/
+        description: REST and GraphQL API design
+        agents:
+          - architect
+          - backend
+      database:
+        path: skills/backend/database/
+        description: Database schema design
+        agents:
+          - architect
+          - backend
+      auth:
+        path: skills/backend/auth/
+        description: Authentication and authorization
+        agents:
+          - backend
+      deployment:
+        path: skills/backend/deployment/
+        description: Deployment and DevOps
+        agents:
+          - architect
+          - backend
+      ai-agent:
+        path: skills/backend/ai-agent/
+        description: AI agent integration
+        agents:
+          - backend
+      rag:
+        path: skills/backend/rag/
+        description: RAG (Retrieval Augmented Generation)
+        agents:
+          - backend

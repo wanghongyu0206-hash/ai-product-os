@@ -1,1 +1,63 @@
-# Workflows Catalog
+# AI Product OS Workflows Catalog
+
+
+workflows:
+
+
+  product-design:
+
+    purpose:
+
+      Idea to product specification
+
+
+    agents:
+
+      - product-manager
+      - ux-designer
+      - ui-designer
+
+
+
+  design-to-code:
+
+    purpose:
+
+      Design specification to application
+
+
+    agents:
+
+      - architect
+      - frontend
+      - backend
+      - qa
+
+
+
+  frontend-development:
+
+    purpose:
+
+      Build production frontend
+
+
+    agents:
+
+      - architect
+      - frontend
+      - qa
+
+
+
+  quality-review:
+
+    purpose:
+
+      Validate artifacts
+
+
+    agents:
+
+      - qa
+

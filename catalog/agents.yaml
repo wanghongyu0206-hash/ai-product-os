@@ -1,1 +1,140 @@
-# Agents Catalog
+# AI Product OS Agents Catalog
+
+
+agents:
+
+
+  product-manager:
+
+    name:
+      Product Manager Agent
+
+    path:
+      agents/product-manager/
+
+    responsibility:
+      Transform ideas into product specifications
+
+    outputs:
+
+      - PRD
+      - User Stories
+      - Feature List
+
+    workflows:
+
+      - product-design
+
+
+
+  architect:
+
+    name:
+      Architect Agent
+
+    path:
+      agents/architect/
+
+    responsibility:
+      Define technical architecture
+
+    outputs:
+
+      - System Architecture
+      - API Design
+      - Data Model
+
+    workflows:
+
+      - design-to-code
+
+
+
+  ux-designer:
+
+    name:
+      UX Designer Agent
+
+    path:
+      agents/ux-designer/
+
+    responsibility:
+      Design user experience structure
+
+    outputs:
+
+      - Information Architecture
+      - User Flow
+      - Wireframe
+
+
+
+  ui-designer:
+
+    name:
+      UI Designer Agent
+
+    path:
+      agents/ui-designer/
+
+    responsibility:
+      Design visual interfaces
+
+    outputs:
+
+      - UI Specification
+      - Design Tokens
+
+
+
+  frontend:
+
+    name:
+      Frontend Agent
+
+    path:
+      agents/frontend/
+
+    responsibility:
+      Implement frontend applications
+
+    outputs:
+
+      - React Code
+      - Components
+
+
+
+  backend:
+
+    name:
+      Backend Agent
+
+    path:
+      agents/backend/
+
+    responsibility:
+      Implement backend services
+
+    outputs:
+
+      - API
+      - Database Schema
+
+
+
+  qa:
+
+    name:
+      QA Agent
+
+    path:
+      agents/qa/
+
+    responsibility:
+      Validate product quality
+
+    outputs:
+
+      - Quality Report
+

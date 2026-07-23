@@ -1,1 +1,60 @@
-# Skills Catalog
+# AI Product OS Skills Catalog
+
+
+skills:
+
+
+  product:
+
+    - prd
+    - user-story
+    - requirement-analysis
+    - mvp
+    - roadmap
+
+
+
+  ux:
+
+    - information-architecture
+    - user-flow
+    - wireframe
+    - interaction
+    - navigation
+
+
+
+  ui:
+
+    - design-system
+    - component-library
+    - dashboard
+    - card
+    - form
+    - chart
+    - style-selector
+
+
+
+  frontend:
+
+    - react-component
+    - nextjs-app-router
+    - tailwind-system
+    - shadcn-component
+    - frontend-architecture
+    - frontend-performance
+    - frontend-review
+
+
+
+  backend:
+
+    - system-design
+    - api-design
+    - database-design
+    - authentication
+    - deployment
+    - rag-architecture
+    - ai-service
+

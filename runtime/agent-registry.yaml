@@ -1,0 +1,115 @@
+# AI Product OS Agent Registry
+# Defines all available agents, their capabilities, and handoff relationships
+
+agents:
+  product-manager:
+    name: Product Manager Agent
+    path: agents/product-manager/
+    description: Transform business requirements into product specifications
+    skills:
+      - product/prd
+      - product/user-story
+      - product/requirement-analysis
+      - product/mvp
+      - product/roadmap
+    workflows:
+      - product-design
+    handoff_to:
+      - architect
+      - ux-designer
+
+  architect:
+    name: Architect Agent
+    path: agents/architect/
+    description: Design technical architecture for product implementation
+    skills:
+      - backend/system-design
+      - backend/api-design
+      - backend/database-design
+      - backend/authentication
+      - backend/deployment
+    workflows:
+      - design-to-code
+      - frontend-development
+    handoff_to:
+      - backend
+      - frontend
+
+  ux-designer:
+    name: UX Designer Agent
+    path: agents/ux-designer/
+    description: Create user experience design and information architecture
+    skills:
+      - ux/information-architecture
+      - ux/user-flow
+      - ux/wireframe
+      - ux/interaction
+      - ux/navigation
+    workflows:
+      - product-design
+    handoff_to:
+      - ui-designer
+
+  ui-designer:
+    name: UI Designer Agent
+    path: agents/ui-designer/
+    description: Design visual interface and component specifications
+    skills:
+      - ui/design-system
+      - ui/component-library
+      - ui/dashboard
+      - ui/card
+      - ui/form
+      - ui/chart
+      - ui/style-selector
+    workflows:
+      - product-design
+      - design-to-code
+    handoff_to:
+      - frontend
+
+  frontend:
+    name: Frontend Agent
+    path: agents/frontend/
+    description: Implement frontend applications using modern frameworks
+    skills:
+      - frontend/react-component
+      - frontend/nextjs-app-router
+      - frontend/tailwind-system
+      - frontend/shadcn-component
+      - frontend/frontend-architecture
+      - frontend/frontend-performance
+      - frontend/frontend-review
+    workflows:
+      - design-to-code
+      - frontend-development
+    handoff_to:
+      - qa
+
+  backend:
+    name: Backend Agent
+    path: agents/backend/
+    description: Implement backend services and API endpoints
+    skills:
+      - backend/system-design
+      - backend/api-design
+      - backend/database-design
+      - backend/authentication
+      - backend/deployment
+      - backend/rag-architecture
+      - backend/ai-service
+    workflows:
+      - design-to-code
+    handoff_to:
+      - qa
+
+  qa:
+    name: QA Agent
+    path: agents/qa/
+    description: Review and validate all outputs for quality assurance
+    skills:
+      - frontend/frontend-review
+    workflows:
+      - quality-review
+    handoff_to:
+      - done

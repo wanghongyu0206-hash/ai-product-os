@@ -1,0 +1,206 @@
+# AI Product OS Request Router v2
+
+routes:
+
+
+  product_request:
+
+    description:
+      Product planning and requirement analysis
+
+    keywords:
+      - PRD
+      - requirement
+      - roadmap
+      - MVP
+      - user story
+      - business model
+
+    agent:
+      name: product-manager
+
+    workflow:
+      name: product-design
+
+    skills:
+      - product/prd
+      - product/requirement-analysis
+      - product/mvp
+
+    outputs:
+      - PRD
+      - User Story
+      - Feature List
+
+    handoff:
+      next:
+        - architect
+        - ux-designer
+
+
+
+  architecture_request:
+
+    description:
+      Technical architecture design
+
+    keywords:
+      - architecture
+      - system design
+      - API
+      - database
+
+    agent:
+      name: architect
+
+    workflow:
+      name: design-to-code
+
+    skills:
+      - backend/system-design
+      - backend/api-design
+      - backend/database-design
+
+    outputs:
+      - Technical Architecture
+      - API Design
+      - Data Model
+
+    handoff:
+      next:
+        - frontend
+        - backend
+
+
+
+  ui_request:
+
+    description:
+      Interface design
+
+    keywords:
+      - UI
+      - interface
+      - component
+      - design system
+
+    agent:
+      name: ui-designer
+
+    workflow:
+      name: product-design
+
+    skills:
+      - ui/design-system
+      - ui/component-library
+      - ui/dashboard
+
+    outputs:
+      - UI Specification
+      - Component Tree
+
+
+
+  frontend_request:
+
+    description:
+      Frontend implementation
+
+    keywords:
+      - React
+      - Next.js
+      - Tailwind
+      - frontend
+
+    agent:
+      name: frontend
+
+    workflow:
+      name: frontend-development
+
+    skills:
+      - frontend/react-component
+      - frontend/nextjs-app-router
+      - frontend/tailwind-system
+
+    outputs:
+      - Source Code
+      - Component Implementation
+
+    handoff:
+      next:
+        - qa
+
+
+
+  backend_request:
+
+    description:
+      Backend implementation
+
+    keywords:
+      - API
+      - server
+      - database
+      - authentication
+
+    agent:
+      name: backend
+
+    workflow:
+      name: design-to-code
+
+    skills:
+      - backend/api-design
+      - backend/database-design
+      - backend/authentication
+
+    outputs:
+      - API
+      - Database Schema
+
+
+
+  quality_request:
+
+    description:
+      Quality validation
+
+    keywords:
+      - QA
+      - review
+      - testing
+
+    agent:
+      name: qa
+
+    workflow:
+      name: quality-review
+
+    skills:
+      - frontend/frontend-review
+
+    outputs:
+      - Quality Report
+
+
+
+default:
+
+  agent:
+    name: product-manager
+
+  workflow:
+    name: product-design
+
+
+
+parsing:
+
+  strategy:
+
+    - keyword
+
+    - intent
+
+    - capability

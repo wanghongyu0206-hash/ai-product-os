@@ -1,0 +1,281 @@
+# AI Product OS Workflow Registry v2
+
+workflows:
+
+
+  product-design:
+
+    name: Product Design Workflow
+
+    description:
+      Convert product ideas into complete product specifications.
+
+
+    trigger:
+
+      keywords:
+        - product
+        - PRD
+        - requirement
+        - MVP
+
+
+    sequence:
+
+
+      - step: 1
+
+        agent:
+          name: product-manager
+
+        input:
+          - user_request
+
+
+        output:
+          - PRD
+          - User Stories
+          - Feature List
+
+
+        validation:
+          - requirement_complete
+
+
+
+      - step: 2
+
+        agent:
+          name: ux-designer
+
+
+        input:
+          - PRD
+
+
+        output:
+          - Information Architecture
+          - User Flow
+          - Wireframe
+
+
+        validation:
+          - user_flow_complete
+
+
+
+      - step: 3
+
+        agent:
+          name: ui-designer
+
+
+        input:
+          - IA
+          - User Flow
+
+
+        output:
+          - UI Specification
+          - Design Tokens
+
+
+        handoff:
+
+          next:
+            - design-to-code
+
+
+
+  design-to-code:
+
+
+    name:
+      Design To Code Workflow
+
+
+    trigger:
+
+      input:
+        - UI Specification
+
+
+    sequence:
+
+
+      - step: 1
+
+        agent:
+          name: architect
+
+
+        input:
+          - PRD
+          - UI Specification
+
+
+        output:
+
+          - Technical Architecture
+          - API Design
+          - Database Design
+
+
+
+      - step: 2
+
+
+        agent:
+          name: frontend
+
+
+        input:
+
+          - UI Specification
+          - Architecture Document
+
+
+        output:
+
+          - Frontend Code
+          - Components
+
+
+
+      - step: 3
+
+
+        agent:
+          name: backend
+
+
+        input:
+
+          - API Design
+          - Database Design
+
+
+        output:
+
+          - Backend Service
+          - API Endpoint
+
+
+
+      - step: 4
+
+
+        agent:
+          name: qa
+
+
+        input:
+
+          - Frontend Code
+          - Backend Code
+
+
+        output:
+
+          - Quality Report
+
+
+
+
+  frontend-development:
+
+
+    name:
+      Frontend Development Workflow
+
+
+    sequence:
+
+
+      - step: 1
+
+        agent:
+          name: architect
+
+
+        output:
+
+          - Frontend Architecture
+
+
+
+      - step: 2
+
+
+        agent:
+          name: frontend
+
+
+        output:
+
+          - React Application
+          - Component Library
+
+
+
+      - step: 3
+
+
+        agent:
+          name: qa
+
+
+        output:
+
+          - Frontend Review Report
+
+
+
+
+  quality-review:
+
+
+    name:
+
+      Quality Review Workflow
+
+
+    sequence:
+
+
+      - step: 1
+
+        agent:
+          name: qa
+
+
+        input:
+
+          - artifact
+
+
+        output:
+
+          - Review Result
+
+
+        validation:
+
+          - issue_detected
+          - quality_score_generated
+
+
+
+failure_handling:
+
+
+  retry:
+
+    max_attempts: 2
+
+
+
+  fallback:
+
+    agent:
+      qa

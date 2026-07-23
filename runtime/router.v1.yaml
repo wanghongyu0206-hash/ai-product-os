@@ -1,0 +1,113 @@
+# AI Product OS Request Router
+# Maps request types to appropriate entry agents
+
+routes:
+  product_request:
+    description: Requests for product planning and requirements
+    keywords:
+      - PRD
+      - requirements
+      - user stories
+      - product plan
+      - roadmap
+      - MVP
+      - business model
+      - competitive analysis
+    agent: product-manager
+    workflow: product-design
+
+  architecture_request:
+    description: Requests for technical architecture design
+    keywords:
+      - architecture
+      - system design
+      - API design
+      - database design
+      - tech stack
+      - infrastructure
+    agent: architect
+    workflow: design-to-code
+
+  ux_request:
+    description: Requests for user experience design
+    keywords:
+      - user experience
+      - UX
+      - information architecture
+      - user flow
+      - wireframe
+      - navigation
+      - interaction design
+    agent: ux-designer
+    workflow: product-design
+
+  ui_request:
+    description: Requests for visual interface design
+    keywords:
+      - UI
+      - interface design
+      - visual design
+      - design system
+      - components
+      - layout
+      - style
+    agent: ui-designer
+    workflow: product-design
+
+  frontend_request:
+    description: Requests for frontend implementation
+    keywords:
+      - frontend
+      - React
+      - Next.js
+      - component
+      - page
+      - styling
+      - Tailwind
+      - implementation
+    agent: frontend
+    workflow: frontend-development
+
+  backend_request:
+    description: Requests for backend implementation
+    keywords:
+      - backend
+      - API
+      - database
+      - server
+      - authentication
+      - endpoint
+      - service
+    agent: backend
+    workflow: design-to-code
+
+  quality_request:
+    description: Requests for quality review and validation
+    keywords:
+      - review
+      - QA
+      - quality
+      - validation
+      - testing
+      - audit
+      - check
+    agent: qa
+    workflow: quality-review
+
+# Default routing when no specific type is matched
+default:
+  agent: product-manager
+  workflow: product-design
+
+# Request parsing rules
+parsing:
+  # How to determine request type from user input
+  strategy: keyword-matching
+  priority:
+    - quality_request
+    - frontend_request
+    - backend_request
+    - ui_request
+    - ux_request
+    - architecture_request
+    - product_request

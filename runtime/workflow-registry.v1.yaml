@@ -1,0 +1,101 @@
+# AI Product OS Workflow Registry
+# Defines available workflows and their execution sequences
+
+workflows:
+  product-design:
+    name: Product Design Workflow
+    description: End-to-end product design from requirements to implementation
+    sequence:
+      - step: 1
+        agent: product-manager
+        action: Analyze requirements and create PRD
+        input: User request
+        output: PRD.md, User Stories
+      - step: 2
+        agent: ux-designer
+        action: Create information architecture and user flows
+        input: PRD.md
+        output: Information Architecture, User Flow
+      - step: 3
+        agent: ui-designer
+        action: Design visual interface specifications
+        input: Information Architecture, User Flow
+        output: UI Specification, Design Tokens
+    trigger: User requests product design
+    completion: UI specifications ready for implementation
+
+  design-to-code:
+    name: Design to Code Workflow
+    description: Transform design specifications into working code
+    sequence:
+      - step: 1
+        agent: architect
+        action: Design technical architecture
+        input: UI Specification, PRD.md
+        output: Architecture Document, API Design
+      - step: 2
+        agent: frontend
+        action: Implement frontend application
+        input: UI Specification, Architecture Document
+        output: Frontend Code, Component Library
+      - step: 3
+        agent: backend
+        action: Implement backend services
+        input: API Design, Architecture Document
+        output: Backend Code, API Endpoints
+      - step: 4
+        agent: qa
+        action: Review and validate implementation
+        input: Frontend Code, Backend Code
+        output: Quality Report, Issues List
+    trigger: UI specifications completed
+    completion: Working application with QA approval
+
+  frontend-development:
+    name: Frontend Development Workflow
+    description: Focused frontend implementation from design to deployment
+    sequence:
+      - step: 1
+        agent: architect
+        action: Define frontend architecture
+        input: UI Specification
+        output: Frontend Architecture Plan
+      - step: 2
+        agent: frontend
+        action: Implement components and pages
+        input: UI Specification, Frontend Architecture
+        output: React Components, Pages, Styles
+      - step: 3
+        agent: frontend
+        action: Optimize performance
+        input: React Components
+        output: Performance Report, Optimizations
+      - step: 4
+        agent: qa
+        action: Review frontend quality
+        input: All frontend artifacts
+        output: Frontend Review Report
+    trigger: Frontend implementation needed
+    completion: Production-ready frontend
+
+  quality-review:
+    name: Quality Review Workflow
+    description: Comprehensive quality review of any deliverable
+    sequence:
+      - step: 1
+        agent: qa
+        action: Review deliverables against requirements
+        input: Any agent output
+        output: Quality Assessment
+      - step: 2
+        agent: qa
+        action: Identify issues and improvements
+        input: Quality Assessment
+        output: Issues List, Recommendations
+      - step: 3
+        agent: qa
+        action: Generate final quality report
+        input: Issues List, Recommendations
+        output: Quality Report
+    trigger: Any deliverable ready for review
+    completion: Quality report with approval/rejection decision

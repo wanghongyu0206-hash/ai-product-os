@@ -1,1 +1,35 @@
-# Styles Catalog
+# AI Product OS Styles Catalog
+
+
+styles:
+
+
+  apple:
+
+    description:
+
+      Minimal, clean, premium interface style
+
+
+    applicable:
+
+      - SaaS
+      - Enterprise Dashboard
+      - AI Products
+
+
+
+  enterprise:
+
+    description:
+
+      Professional business software interface
+
+
+
+  ai-modern:
+
+    description:
+
+      Modern AI native product style
+
