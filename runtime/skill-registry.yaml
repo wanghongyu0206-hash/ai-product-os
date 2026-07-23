@@ -220,13 +220,13 @@ categories:
           - architect
           - backend
       database:
-        path: skills/backend/database/
+        path: skills/backend/database-design/
         description: Database schema design
         agents:
           - architect
           - backend
       auth:
-        path: skills/backend/auth/
+        path: skills/backend/authentication/
         description: Authentication and authorization
         agents:
           - backend
@@ -242,7 +242,7 @@ categories:
         agents:
           - backend
       rag:
-        path: skills/backend/rag/
+        path: skills/backend/rag-architecture/
         description: RAG (Retrieval Augmented Generation)
         agents:
           - backend
