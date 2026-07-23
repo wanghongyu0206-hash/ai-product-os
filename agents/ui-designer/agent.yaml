@@ -1,0 +1,31 @@
+name: UI Designer Agent
+
+version: "1.0"
+
+default_workflow: ui-design
+
+skills:
+
+  - ui/design-system
+
+  - ui/component-library
+
+  - ui/dashboard
+
+  - ui/card
+
+  - ui/form
+
+  - ui/chart
+
+  - ui/style-selector
+
+available_workflows:
+
+  - ui-design
+
+  - product-design
+
+handoff_to: frontend
+
+input_from: ux-designer

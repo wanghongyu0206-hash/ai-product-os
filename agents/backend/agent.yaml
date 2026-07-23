@@ -1,0 +1,21 @@
+name: Backend Agent
+
+version: "1.0"
+
+default_workflow: backend-development
+
+skills: []
+
+available_workflows:
+
+  - backend-development
+
+  - product-development
+
+handoff_to:
+
+  - qa
+
+input_from:
+
+  - architect

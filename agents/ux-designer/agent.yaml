@@ -1,0 +1,29 @@
+name: UX Designer Agent
+
+version: "1.0"
+
+default_workflow: ux-design
+
+skills:
+
+  - ux/information-architecture
+
+  - ux/user-flow
+
+  - ux/wireframe
+
+  - ux/interaction
+
+  - ux/navigation
+
+  - ux/design-review
+
+available_workflows:
+
+  - ux-design
+
+  - product-design
+
+handoff_to: ui-designer
+
+input_from: product-manager

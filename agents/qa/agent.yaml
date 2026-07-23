@@ -1,0 +1,29 @@
+name: QA Agent
+
+version: "1.0"
+
+default_workflow: quality-review
+
+skills: []
+
+available_workflows:
+
+  - quality-review
+
+  - product-development
+
+handoff_to: done
+
+input_from:
+
+  - product-manager
+
+  - ux-designer
+
+  - ui-designer
+
+  - architect
+
+  - frontend
+
+  - backend

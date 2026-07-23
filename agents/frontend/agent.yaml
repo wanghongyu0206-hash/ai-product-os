@@ -1,0 +1,23 @@
+name: Frontend Agent
+
+version: "1.0"
+
+default_workflow: frontend-development
+
+skills: []
+
+available_workflows:
+
+  - frontend-development
+
+  - product-development
+
+handoff_to:
+
+  - qa
+
+input_from:
+
+  - ui-designer
+
+  - architect

@@ -1,0 +1,23 @@
+name: Architect Agent
+
+version: "1.0"
+
+default_workflow: architecture-design
+
+skills: []
+
+available_workflows:
+
+  - architecture-design
+
+  - product-development
+
+handoff_to:
+
+  - backend
+
+  - frontend
+
+input_from:
+
+  - product-manager
